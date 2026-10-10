@@ -1,5 +1,6 @@
 package Abstarct;
-gitimport java.util.Stack;
+import java.util.Stack;
+import java.util.*;
 
 public class Stack {
     public static void main(String[] args) {
