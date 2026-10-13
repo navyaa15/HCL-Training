@@ -1,4 +1,4 @@
-package Lambda;
+package Module1.Lambda;
 // create a airthhematic interface with a abstract method calculate and write all lambda expressions for calculator
 
 @FunctionalInterface

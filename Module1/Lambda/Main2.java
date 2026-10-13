@@ -1,4 +1,4 @@
-package Lambda;
+package Module1.Lambda;
 
 
 import java.util.function.*;
