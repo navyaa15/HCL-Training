@@ -62,7 +62,7 @@ public class employee {
         System.out.println("\nAfter Delete:");
         System.out.println(employees);
 
-        // ListIterator: forward traversal
+
         System.out.println("\nListIterator Forward:");
         ListIterator<Employee> li = employees.listIterator();
 
@@ -70,7 +70,7 @@ public class employee {
             System.out.println(li.next());
         }
 
-        // ListIterator: backward traversal
+
         System.out.println("\nListIterator Backward:");
 
         while (li.hasPrevious()) {
