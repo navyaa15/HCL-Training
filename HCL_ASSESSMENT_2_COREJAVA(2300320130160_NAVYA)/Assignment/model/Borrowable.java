@@ -1,6 +1,6 @@
-package Assignment.model;
-
-public interface Borrowable {
-    void borrow() throws ItemNotAvailableException;
-    void returnItem();
-}
+//package Assignment.model;
+//
+//public interface Borrowable {
+//    void borrow() throws ItemNotAvailableException;
+//    void returnItem();
+//}
