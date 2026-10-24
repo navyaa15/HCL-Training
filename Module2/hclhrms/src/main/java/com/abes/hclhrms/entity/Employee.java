@@ -15,28 +15,12 @@ public class Employee {
         this.email = email;
     }
 
-    public long getEmp_id() {
-        return emp_id;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmp_id(long emp_id) {
-        this.emp_id = emp_id;
-    }
-
-    public String getEmp_name() {
-        return emp_name;
-    }
-
-    public void setEmp_name(String emp_name) {
-        this.emp_name = emp_name;
-    }
-
-    public String getDesignation() {
-        return designation;
-    }
-
-    public void setDesignation(String designation) {
-        this.designation = designation;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getProgStack() {
@@ -47,11 +31,27 @@ public class Employee {
         this.progStack = progStack;
     }
 
-    public String getEmail() {
-        return email;
+    public String getDesignation() {
+        return designation;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
+    public String getEmp_name() {
+        return emp_name;
+    }
+
+    public void setEmp_name(String emp_name) {
+        this.emp_name = emp_name;
+    }
+
+    public long getEmp_id() {
+        return emp_id;
+    }
+
+    public void setEmp_id(long emp_id) {
+        this.emp_id = emp_id;
     }
 }

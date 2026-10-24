@@ -1,11 +1,9 @@
-
 package com.abes.hclhrms.controller;
 
 import com.abes.hclhrms.EmployeeServiceImp;
 import com.abes.hclhrms.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,7 +13,7 @@ public class EmployeeController {
     @Autowired
     private EmployeeServiceImp employeeServiceImp;
 
-    @GetMapping("/welcome")
+    @GetMapping("/")
     public String welcomeMsg() {
         return "Welcome to ABES HRMS";
     }
@@ -26,7 +24,28 @@ public class EmployeeController {
     }
 
     @GetMapping("/getemp")
-    public List<Employee> getemp(){
+    public List<Employee> getEmp() {
         return employeeServiceImp.getEmp();
     }
+
+    @GetMapping("/id")
+    public Employee getempById() {
+        return employeeServiceImp.getEmpId();
+    }
+
+    @GetMapping("/bulk")
+    public String addEmpBulk() {
+        return employeeServiceImp.addEmpBulk();
+    }
+
+    @DeleteMapping("/deleteById")
+        public String deleteById () {
+            return employeeServiceImp.deleteById();
+        }
+
+    @PutMapping("/updateById")
+    public String updateById(){
+
+    }
+
 }
