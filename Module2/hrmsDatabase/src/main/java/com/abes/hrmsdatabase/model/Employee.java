@@ -2,24 +2,40 @@ package com.abes.hrmsdatabase.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "employees")
 public class Employee {
+
     @Id
     private long emp_id;
     private String emp_name;
-    private String stack;
     private String designation;
+    private String stack;
+    private String email;
+    private String password;
 
-    public Employee(){
+    public Employee() {
 
     }
 
-    public Employee(long emp_id, String emp_name, String stack, String designation) {
+    public Employee(long emp_id, String emp_name, String designation,
+                    String stack, String email, String password) {
         this.emp_id = emp_id;
         this.emp_name = emp_name;
-        this.stack = stack;
         this.designation = designation;
+        this.stack = stack;
+        this.email = email;
+        this.password = password;
+    }
+
+    public long getEmp_id() {
+        return emp_id;
+    }
+
+    public void setEmp_id(long emp_id) {
+        this.emp_id = emp_id;
     }
 
     public String getEmp_name() {
@@ -30,14 +46,6 @@ public class Employee {
         this.emp_name = emp_name;
     }
 
-    public String getStack() {
-        return stack;
-    }
-
-    public void setStack(String stack) {
-        this.stack = stack;
-    }
-
     public String getDesignation() {
         return designation;
     }
@@ -46,11 +54,27 @@ public class Employee {
         this.designation = designation;
     }
 
-    public long getEmp_id() {
-        return emp_id;
+    public String getStack() {
+        return stack;
     }
 
-    public void setEmp_id(long emp_id) {
-        this.emp_id = emp_id;
+    public void setStack(String stack) {
+        this.stack = stack;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
